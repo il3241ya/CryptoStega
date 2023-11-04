@@ -7,8 +7,8 @@ import metrics
 
 def main():
 	"""
-    The main function to interact with the user and perform embedding/extraction tasks.
-    """
+	The main function to interact with the user and perform embedding/extraction tasks.
+	"""
 	cp.bprint("Enter the name of the input file (the file should be saved in the /in_img folder)")
 	name = input()
 	path_to_inp_image = "in_img/" + name
@@ -152,16 +152,16 @@ def main():
 
 def embedding(input_img: Image, input_message: str, q: int) -> Image:
 	"""
-    Embeds a message into an image using quantization.
+	Embeds a message into an image using quantization.
 
-    Args:
-        input_img (Image): The input image.
-        input_message (str): The message to be embedded.
-        q (int): The quantization step.
+	Args:
+		input_img (Image): The input image.
+		input_message (str): The message to be embedded.
+		q (int): The quantization step.
 
-    Returns:
-        Image: The image with the embedded message.
-    """
+	Returns:
+		Image: The image with the embedded message.
+	"""
 	input_img = input_img.convert('RGB')
 	size_of_input_img = (input_img.size)
 	can_insert = functions.check_size(size_of_input_img, input_message)
@@ -188,15 +188,15 @@ def embedding(input_img: Image, input_message: str, q: int) -> Image:
 
 def extraction(stego_img: Image, q: int) -> str:
 	"""
-    Extracts a message from a stego image using quantization.
+	Extracts a message from a stego image using quantization.
 
-    Args:
-        stego_img (Image): The stego image.
-        q (int): The quantization step.
+	Args:
+		stego_img (Image): The stego image.
+		q (int): The quantization step.
 
-    Returns:
-        str: The extracted message.
-    """
+	Returns:
+		str: The extracted message.
+	"""
 	stego_img = stego_img.convert('RGB')
 	size_of_input_img = (stego_img.size)
 	ext_message_binary = []
