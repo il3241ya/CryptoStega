@@ -1,4 +1,4 @@
-from vizhiner import decrypt
+from vigener import decrypt
 
 
 def brutforcer():
