@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def gcd(n1, n2):
+def gcd(n1: int, n2: int) -> int:
     """
     Calculate the greatest common divisor (GCD) of two numbers using Euclidean algorithm.
 
