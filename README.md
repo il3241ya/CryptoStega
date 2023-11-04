@@ -4,7 +4,7 @@ This repository stores python implementation of cryptographic and steganographic
 
 ## Crypto
 
-### Vigener cipher [https://github.com/il3241ya/crypto_stegano/tree/crypto/vigener]
+### Vigener cipher https://github.com/il3241ya/crypto_stegano/tree/crypto/vigener
 Gamma generation involves applying a certain sequence (gamma) generated based on the encryption key to the plaintext. Applying the gamma to the plaintext typically means adding the characters of the plaintext to the characters of the gamma modulo the corresponding alphabet. However, in classical ciphers, applying the gamma may involve calculating the values of ciphertext characters based on the values of corresponding plaintext characters and the gamma using a certain rule.
 
 One of the classic examples of a cipher that uses gamma generation is the Vigenère cipher, structured as follows. The characters of an alphabet A with a size of m are represented as elements of the set Zm. The plaintext and ciphertext are denoted as x = (x1, ..., xl) and y = (y1, ..., yl), where xi, yi ∈ Zm, i = 1, l.
@@ -21,7 +21,7 @@ In the Vigenère cipher, a short phrase called the "slogan" (password) is typica
 
 Another approach to generating a pseudo-random key sequence is the "Vigenère self-key." Here, only one character is chosen as the initial key, and it is followed by all the characters of the plaintext, except the last one, to create the gamma. Alternatively, the gamma can be formed by adding characters from the ciphertext sequentially to the initial character.
 
-### Hill cipher
+### Hill cipher https://github.com/il3241ya/crypto_stegano/tree/crypto/hill
 
 The Hill cipher is an example of a block cipher based on matrix transformations using modular arithmetic. This cipher is structured as follows.
 
