@@ -47,3 +47,10 @@ K⁻¹i = K⁻¹i-2K⁻¹i-1.
 
 ## Stegano
 
+### QIM stego https://github.com/il3241ya/crypto_stegano/tree/stegano/qim
+
+The Quantization Index Modulation (QIM) method [3] involves changing the pixel values of an image based on the values of the embedded message bits. This operation is referred to as modulation. Embedding a bit mi is done in the container pixel Pi using formula
+
+Here, q is the quantization step (an even number), ⌊...⌋ denotes taking the integer part of the division.
+
+For extraction, the situation is modeled where both the zero and one bits are embedded in the pixel Pi'. The resulting bit is determined based on which of the two values, P i', is closer to the actual value P i''. The formula for extracting one bit is presented in formula.
