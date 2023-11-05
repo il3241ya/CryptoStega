@@ -47,3 +47,18 @@ K⁻¹i = K⁻¹i-2K⁻¹i-1.
 
 ## Stegano
 
+### QIM stego https://github.com/il3241ya/crypto_stegano/tree/stegano/qim
+
+The Quantization Index Modulation (QIM) method [3] involves changing the pixel values of an image based on the values of the embedded message bits. This operation is referred to as modulation. Embedding a bit mi is done in the container pixel Pi using formula
+
+Here, q is the quantization step (an even number), ⌊...⌋ denotes taking the integer part of the division.
+
+For extraction, the situation is modeled where both the zero and one bits are embedded in the pixel Pi'. The resulting bit is determined based on which of the two values, P i', is closer to the actual value P i''. The formula for extracting one bit is presented in formula.
+
+### Watermark https://github.com/il3241ya/crypto_stegano/tree/stegano/watermark
+
+A digital watermark (DWM) is additional information embedded in digital images for the purpose of authentication or integrity control. DWMs vary in their resistance to distortions: fragile DWMs are destroyed with any changes to the container, semi-fragile ones can withstand certain authorized transformations, and robust DWMs remain detectable even after significant image-container distortions.
+
+Semi-fragile and robust DWMs are of great value for solving tasks related to the authentication of digital content and protecting its ownership. To achieve this, approaches to embedding additional information must leave traces of the watermark intact after various attacks on the image containing the DWM. While the literature includes analyses of the robustness of DWM embedding algorithms to a variety of attacks, not all of these attacks are practically relevant. The probability of images with watermarks being subjected to "salt-and-pepper" noise or median filtering is extremely low. Real-world scenarios involve typical image processing operations such as cropping, scaling, brightness and/or contrast adjustments, and JPEG compression. Therefore, embedding robustness relative to this list of attacks is of the utmost practical value.
+
+In general, the frequency domain of images allows for greater robustness in embedding while preserving visual imperceptibility compared to the spatial domain. Embedding information in the frequency domain of digital images involves the prior implementation of some frequency transformation and subsequent modification of the obtained frequency coefficients. The most widely used transformations for concealing information in digital images include the discrete cosine transform (DCT), discrete Fourier transform (DFT), and discrete wavelet transform (DWT).
